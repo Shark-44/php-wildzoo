@@ -2,7 +2,7 @@
 
 namespace App\Animal;
 
-class Bird extends Animal
+abstract class Bird extends Animal
 {
     private int $pawNumber = 2;
     
@@ -10,4 +10,5 @@ class Bird extends Animal
     {
         parent::__construct($name, $this->pawNumber);
     }
+    abstract public function describeWings();
 }

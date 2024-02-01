@@ -2,7 +2,7 @@
 
 namespace App\Animal;
 
-class Insect extends Arthropode
+abstract class Insect extends Arthropode
 {
     private int $pawNumber = 6;
     
@@ -10,4 +10,5 @@ class Insect extends Arthropode
     {
         parent::__construct($name, $this->pawNumber);
     }
+    abstract public function describeWings();
 }
